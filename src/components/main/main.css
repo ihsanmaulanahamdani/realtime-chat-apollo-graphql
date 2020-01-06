@@ -1,0 +1,60 @@
+.main-background {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 300px;
+  height: 500px;
+}
+
+.chat {
+  width: 300px;
+  justify-content: start;
+  flex-grow: 1;
+}
+
+.user-1 {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 5px;
+  background-color: grey;
+  padding: 3px 10px;
+  width: 110px;
+  border-radius: 16px;
+}
+
+.user-2 {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 165px;
+  background-color: salmon;
+  color: white;
+  padding: 3px 10px;
+  width: 110px;
+  border-radius: 16px;
+}
+
+.input-text {
+  width: 300px;
+  flex-grow: 0.01;
+  flex-direction: column;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  background-color: antiquewhite;
+}
+
+input {
+  border: 2px solid salmon;
+  border-radius: 12px;
+  padding: 3px;
+  width: 90%;
+}
+
+input[type="text"]:focus {
+  background-color: salmon;
+  outline: none;
+}
+
+input[type="password"]:focus {
+  background-color: salmon;
+  outline: none;
+}
