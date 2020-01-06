@@ -12,9 +12,6 @@ import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 
-// import store from "./store";
-// import { Provider } from "react-redux";
-
 const httpLink = new HttpLink({
   uri: "http://localhost:4000/graphql"
 });
@@ -43,13 +40,6 @@ const client = new ApolloClient({
   link,
   cache
 });
-
-// ReactDOM.render(
-//   <Provider store={store}>
-//     <App />
-//   </Provider>,
-//   document.getElementById("root")
-// );
 
 ReactDOM.render(
   <ApolloProvider client={client}>
